@@ -1,0 +1,128 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="JavaScript/funciones.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+        <div class=col-12">
+            <h5 style="text-align: center">FORMULARIO DE VOTACIÓN</h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+
+            <div class="input-group" style="padding-top:12px;">
+                <span class="input-group-text">Nombre y Apellido</span>
+                <input type="text" class="form-control" id="inputnombre" placeholder="Nombre y Apellido" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="input-group" style="padding-top:12px;">
+                <span class="input-group-text">Alias</span>
+                <input type="text" class="form-control" id="inputalias" placeholder="Alias" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="input-group" style="padding-top:12px;">
+                <span class="input-group-text">RUT</span>
+                <input type="text" required class="form-control" id="inputrut" placeholder="RUT" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="salida"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+
+            <div class="input-group" style="padding-top:12px;">
+                <span class="input-group-text">Email</span>
+                <input type="email" class="form-control" id="inputemail" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class=col-12" style="padding-top:12px;">
+            <label for="selectregion" class="form-label">Región</label>
+            <select class="form-select" id="selectregion" onchange="cargarSelectComuna(this)"  aria-label="Default select example">
+                <option selected>Seleccione....</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class=col-12" style="padding-top:12px;">
+            <label for="selectcomuna" class="form-label">Comuna</label>
+            <select class="form-select" id="selectcomuna" aria-label="Default select example">
+                <option selected>Seleccione....</option>
+
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class=col-12" style="padding-top:12px;">
+            <label for="selectcandidato" class="form-label">Candidato</label>
+            <select class="form-select" id="selectcandidato"  aria-label="Default select example">
+                <option selected>Seleccione....</option>
+
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-12" style="padding-top:12px;">
+            <label >Como se enteró de nosotros</label>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Web">
+                <label class="form-check-label" for="inlineCheckbox1">Web</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="TV">
+                <label class="form-check-label" for="inlineCheckbox2">TV</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Redes Sociales">
+                <label class="form-check-label" for="inlineCheckbox3">Redes Sociales</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Amigo">
+                <label class="form-check-label" for="inlineCheckbox3">Amigo</label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-3"  style="padding-top:12px;">
+            <button type="button" onclick="guardarVoto()" id="bntvotar" class="btn btn-primary">Votar</button>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+
+</script>
+</body>
+</html>

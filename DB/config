@@ -1,0 +1,11 @@
+{
+    "conexion":{
+        "server":"localhost",
+        "user":"root",
+        "password":"",
+        "database":"sistemadevotacion",
+        "port":"3306"
+
+    }
+
+}
